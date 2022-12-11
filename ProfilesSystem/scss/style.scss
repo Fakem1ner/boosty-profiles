@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: sans-serif;
+}
+body {
+    background: #009FFF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ec2F4B, #009FFF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ec2F4B, #009FFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0 15px;
+    overflow: hidden;
+}
+.wrapper {
+    background-color: #fff;
+    max-width: 360px;
+    padding: 8px;
+    border-radius: 8px;
+    min-width: 300px;
+}
+
+.login {
+    // .login__file
+    &__file {
+        
+    }
+    &__label {
+        margin: 5px 5px;
+    }
+    // .login__button
+    &__button {
+        background-color: #eee;
+        padding: 8px;
+        border-radius: 8px;
+        font-size: inherit;
+        width: 100%;
+        margin-top: 5px;
+    }
+}
+
+.profile {
+    transition: all 0.5s ease;
+    // .profile__info
+    &__info {}
+    // .profile__block
+    &__block {
+        display: flex;
+        margin: 8px 0;
+    }
+    // .profile__label
+    &__label {
+        margin-right: 5px;
+    }
+    // .profile__name
+    &__name {}
+    // .profile__username
+    &__username {}
+    // .profile__balance
+    &__balance {}
+    // .profile__balancecode
+    &__balancecode {}
+}
+
+.codegen {
+    background-color: #eee;
+    padding: 8px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 280px;
+    font-size: inherit;
+    margin: 4px 0;
+}
+
+
+
+
+
+
+
+.hidden {
+    height: 0;
+    opacity: 0;
+}

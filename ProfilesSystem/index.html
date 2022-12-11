@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="login" id="login">
+            <p class="login__label">
+                Загрузите файл своего профиля <br>
+                или перетяните его на кнопку
+            </p>
+            <input class="login__file" type="file" id="file">
+            <button class="login__button" id="profile" class="">Просмотреть профиль</button>
+        </div>
+        
+        <div class="profile hidden" id="profile-block">
+            <div class="profile__info" id="profile-info">
+                <div class="profile__block">
+                    <p class="profile__label">Имя пользователя: </p>
+                    <p class="profile__name" id="prof-name">${obj.username}</p>
+                </div>
+                <div class="profile__block">
+                    <p class="profile__label">Код: </p>
+                    <p class="profile__username" id="prof-code">${obj.code}</p>
+                </div>
+                <div class="profile__block">
+                    <p class="profile__label">Баланс: </p>
+                    <p class="profile__balance" id="prof-bal">${convertToDefaultNum(obj.bal_code)}</p>
+                </div>
+                <div class="profile__block">
+                    <p class="profile__label">Текущий номер счета: </p>
+                    <p class="profile__balancecode" id="prof-balcode">${obj.bal_code}</p>
+                </div>
+            </div>
+            <div id="addtools"></div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
